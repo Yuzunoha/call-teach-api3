@@ -1,20 +1,23 @@
 まとめると、https://labotschool.slack.com/archives/CQ7BBFT7S/p1576838599077200
 この課題ですが、最終的に以下のようになりました。まずはユーザー登録からしてみてください
 [ユーザー登録]
-POST: https://teachapi.herokuapp.com/users/sign_up
+POST: https://teachapi.herokuapp.com/sign_up
 パラメーターが
 body parameterで
 ```
 {
-	"sign_up_user_params": {
-		"name": "名前を入れてね",
-		"bio": "自己紹介を入れてね",
-                 "email": "email",
-                 "password": "password",
-                 "password_confirmation": "pass"
-	}
+    sign_up_user_params: {
+      name: name,
+      bio: bio,
+      email: email,
+      password: password,
+      password_confirmation: passwordConfirmation
+    }
 }
 ```
+
+ここまでチェックした
+
 [ユーザーログイン]
 POST: https://teachapi.herokuapp.com/users/sign_in
 パラメーターが
