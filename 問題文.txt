@@ -97,14 +97,12 @@ headerにtoken入れる
 [投稿削除]
 DELETE: https://teachapi.herokuapp.com/posts/{id}
 headerにtoken入れる
-
-ここまでチェックした
-
 [投稿一覧]
-GET https://teachapi.herokuapp.com/timeline
+GET https://teachapi.herokuapp.com/posts
 query parameterで
 ```
 page: ページの番号(数字)
 limit: 1ページあたり何個あるか
 query: 単語を入れると検索できる
 headerにtoken入れる
+```
