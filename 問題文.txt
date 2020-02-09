@@ -82,21 +82,21 @@ body parameterで
 }
 ```
 headerにtoken入れる
-
-ここまでチェックした
-
 [投稿編集]
 PUT: https://teachapi.herokuapp.com/posts/{id}
 パラメーターが
 body parameterで
 ```
 {
-	"post_params": {
-                 "text": "text"
-	}
+    post_params: {
+      text: text
+    }
 }
 ```
 headerにtoken入れる
+
+ここまでチェックした
+
 [投稿削除]
 DELETE: https://teachapi.herokuapp.com/posts/{id}
 headerにtoken入れる
