@@ -94,12 +94,12 @@ body parameterで
 }
 ```
 headerにtoken入れる
-
-ここまでチェックした
-
 [投稿削除]
 DELETE: https://teachapi.herokuapp.com/posts/{id}
 headerにtoken入れる
+
+ここまでチェックした
+
 [投稿一覧]
 GET https://teachapi.herokuapp.com/timeline
 query parameterで
