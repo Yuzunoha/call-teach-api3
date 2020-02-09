@@ -47,21 +47,21 @@ limit: 1ページあたり何個あるか
 query: 単語を入れると検索できる
 headerにtoken入れる
 ```
-
-ここまでチェックした
-
 [ユーザー編集]
 PUT https://teachapi.herokuapp.com/users/{id}
 body parameterで
 ```
 {
-	"user_params": {
-		"name": "名前を入れてね",
-		"bio": "自己紹介を入れてね",
-	}
+    user_params: {
+      name: name,
+      bio: bio,
+    }
 }
 ```
 headerにtoken入れる
+
+ここまでチェックした
+
 [ユーザー削除]
 DELETE https://teachapi.herokuapp.com/users/{id}
 headerにtoken入れる
