@@ -62,9 +62,6 @@ headerにtoken入れる
 [ユーザー削除]
 DELETE https://teachapi.herokuapp.com/users/{id}
 headerにtoken入れる
-
-ここまでチェックした
-
 [ユーザーのタイムライン]
 GET https://teachapi.herokuapp.com/users/{id}/timeline
 query parameterで
@@ -73,6 +70,9 @@ page: ページの番号(数字)
 limit: 1ページあたり何個あるか
 query: 単語を入れると検索できる
 headerにtoken入れる
+
+ここまでチェックした
+
 [投稿作成]
 POST: https://teachapi.herokuapp.com/posts
 パラメーターが
