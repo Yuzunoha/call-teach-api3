@@ -37,9 +37,6 @@ body parameterで
     }
 }
 ```
-
-ここまでチェックした
-
 [ユーザー一覧]
 GET https://teachapi.herokuapp.com/users
 パラメーターが
@@ -51,7 +48,7 @@ query: 単語を入れると検索できる
 headerにtoken入れる
 ```
 
-チェック中。ヘッダーにtoken入れる説明
+ここまでチェックした
 
 [ユーザー編集]
 PUT https://teachapi.herokuapp.com/users/{id}
