@@ -15,22 +15,22 @@ body parameterで
     }
 }
 ```
-
-ここまでチェックした
-
 [ユーザーログイン]
-POST: https://teachapi.herokuapp.com/users/sign_in
+POST: https://teachapi.herokuapp.com/sign_in
 パラメーターが
 body parameterで
 ```
 {
-	"sign_in_user_params": {
-                 "email": "email",
-                 "password": "password",
-                 "password_confirmation": "pass"
-	}
+    sign_in_user_params: {
+      email: email,
+      password: password,
+      password_confirmation: passwordConfirmation
+    }
 }
 ```
+
+ここまでチェックした
+
 [ユーザー一覧]
 GET https://teachapi.herokuapp.com/users
 パラメーターが
