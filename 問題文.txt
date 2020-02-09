@@ -15,7 +15,6 @@ Authorization: Bearer XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 POST: https://teachapi.herokuapp.com/sign_up
 パラメーターが
 body parameterで
-```
 {
     sign_up_user_params: {
       name: name,
@@ -25,12 +24,10 @@ body parameterで
       password_confirmation: passwordConfirmation
     }
 }
-```
 [ユーザーログイン]
 POST: https://teachapi.herokuapp.com/sign_in
 パラメーターが
 body parameterで
-```
 {
     sign_in_user_params: {
       email: email,
@@ -38,37 +35,30 @@ body parameterで
       password_confirmation: passwordConfirmation
     }
 }
-```
 [ユーザー一覧]
 GET https://teachapi.herokuapp.com/users
 パラメーターが
 query parameterで
-```
 page: ページの番号(数字)
 limit: 1ページあたり何個あるか
 query: 単語を入れると検索できる
 headerにtoken入れる
-```
 [投稿一覧]
 GET https://teachapi.herokuapp.com/posts
 query parameterで
-```
 page: ページの番号(数字)
 limit: 1ページあたり何個あるか
 query: 単語を入れると検索できる
 headerにtoken入れる
-```
 [ユーザー編集]
 PUT https://teachapi.herokuapp.com/users/{id}
 body parameterで
-```
 {
     user_params: {
       name: name,
       bio: bio,
     }
 }
-```
 headerにtoken入れる
 [ユーザー削除]
 DELETE https://teachapi.herokuapp.com/users/{id}
@@ -76,7 +66,6 @@ headerにtoken入れる
 [ユーザーのタイムライン]
 GET https://teachapi.herokuapp.com/users/{id}/timeline
 query parameterで
-```
 page: ページの番号(数字)
 limit: 1ページあたり何個あるか
 query: 単語を入れると検索できる
@@ -85,25 +74,21 @@ headerにtoken入れる
 POST: https://teachapi.herokuapp.com/posts
 パラメーターが
 body parameterで
-```
 {
     post_params: {
       text: text
     }
 }
-```
 headerにtoken入れる
 [投稿編集]
 PUT: https://teachapi.herokuapp.com/posts/{id}
 パラメーターが
 body parameterで
-```
 {
     post_params: {
       text: text
     }
 }
-```
 headerにtoken入れる
 [投稿削除]
 DELETE: https://teachapi.herokuapp.com/posts/{id}
